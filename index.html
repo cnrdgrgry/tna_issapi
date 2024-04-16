@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ISS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>ISS</h1>
+    <p>
+      This page shows you a near live feed of the position of the International
+      Space Station over the earth.
+    </p>
+    <div class="container">
+      <div class="text-container">
+        <p><strong>Latitude:</strong> <em class="latitude"></em></p>
+        <p><strong>Longitude:</strong> <em class="longitude"></em></p>
+        <p>
+          <strong>In Daylight or Darkness:</strong> <em class="daylight"></em>
+        </p>
+      </div>
+      <div>
+        <button class="update">Update Location.</button>
+      </div>
+    </div>
+    <p>
+      Location updates every 30 seconds, but if you cannot wait then please use
+      the button.
+    </p>
+
+    <div id="map"></div>
+
+    <footer>
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@actionvance?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >ActionVance</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/outer-space-photography-of-earth-t7EL2iG3jMc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
