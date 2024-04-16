@@ -1,7 +1,9 @@
+A View of the International Space Station's position over eath.
 This project involved refactoring some initially supplied code:
 
-# Was:
-```function requestISSLocation() {
+## Was:
+```
+function requestISSLocation() {
     var apiUrl = "https://api.wheretheiss.at/v1/satellites/25544";
 
     fetch(apiUrl)
@@ -15,11 +17,13 @@ This project involved refactoring some initially supplied code:
         .catch((error) => {
             console.error('Error:', error);
         });
-}```
+}
+```
 
-# Now:
+## Now:
 
-```async function requestISSLocation() {
+```
+async function requestISSLocation() {
 var apiUrl = "https://api.wheretheiss.at/v1/satellites/25544";
 
     try {
@@ -33,7 +37,8 @@ var apiUrl = "https://api.wheretheiss.at/v1/satellites/25544";
   } catch (error) {
     console.error(("Error is:" + error);
   }
-}```
+}
+```
 
 Then continue having an experiment with manipulating data obtained from 3rd
-party APIs; in this case, [The International Spacestation](https://wheretheiss.at/) aand also [LeafletJS open source Javascript library for interactive maps](https://leafletjs.com/).
+party APIs; in this case, [The International Spacestation](https://wheretheiss.at/) and also [LeafletJS open source Javascript library for interactive maps](https://leafletjs.com/).
